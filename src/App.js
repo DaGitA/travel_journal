@@ -4,7 +4,7 @@ import Main from "./Main.js"
 
 function App() {
   return (
-    <div>
+    <div className="app">
         <Navbar/>
         <Main/>
     </div>
