@@ -11,12 +11,12 @@
 }
 
 .main{
-  max-width: 80%;
+  max-width: 60%;
 }
 
 .card__image{
   border-radius: 5px;
-  width: 125px;
+  max-width: 150px;
   height:auto
 }
 
@@ -24,4 +24,22 @@
   display:flex;
   flex-direction: row;
   margin: 40px;
+  align-items: center;
+}
+
+.card__info__icon{
+  color:rgb(40,153,243);
+}
+
+.card__info a{
+  color:#918E9B;
+  margin-left:20px;
+}
+
+.card__info h1{
+  margin:0
+}
+
+.card__info{
+  margin-left:20px;
 }
