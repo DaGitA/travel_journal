@@ -1,20 +1,18 @@
 import React from "react";
-import travelImage from "./cantons.jpg";
 
-export default function Card(){
+export default function Card(props){
     return(
         <div className="card">
             <div>
-                <img className="card__image"  src={travelImage} alt="travel image"/>
+                <img className="card__image"  src={props.info.imageUrl} alt="travel image"/>
             </div>
             <div className="card__info">
-                <i className="card__info__icon fas fa-map-marker-alt"></i>
-                <span>   CANADA</span>
-                <a href="https://maps.google.ca/">View on Google Maps</a>
-                <h1>Un voyage</h1>
-                <p><b>12 janvier - 18 janvier 2021</b></p>
-                <p>The Sydney Opera House is a multi-venue performing arts centre in Sydney. Located on the banks of the Sydney Harbour, it is often regarded as one of the 20th century's most famous and distinctive buildings
-                </p>
+                <i className="card__info__icon fas fa-map-marker-alt"/>
+                <span>   {props.info.location}</span>
+                <a href={props.info.googleMapsUrl}>View on Google Maps</a>
+                <h1>{props.info.title}</h1>
+                <p><b>{props.info.startDate} - {props.info.endDate}</b></p>
+                <p>{props.info.description}</p>
             </div>
         </div>
     )
