@@ -10,8 +10,8 @@ export default function Card(props){
                 <i className="card__info__icon fas fa-map-marker-alt"/>
                 <span>   {props.info.location}</span>
                 <a href={props.info.googleMapsUrl}>View on Google Maps</a>
-                <h1>{props.info.title}</h1>
-                <p><b>{props.info.startDate} - {props.info.endDate}</b></p>
+                <h2>{props.info.title}</h2>
+                <p>{props.info.startDate} - {props.info.endDate}</p>
                 <p>{props.info.description}</p>
             </div>
         </div>
